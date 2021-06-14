@@ -1,2 +1,2 @@
-# Simple-Top-Down-Shooter
+# Simple Top-Down shooter
 Simple top-down shooter
