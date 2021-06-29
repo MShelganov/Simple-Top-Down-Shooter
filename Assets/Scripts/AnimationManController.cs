@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class AnimationManController : MonoBehaviour
 {
+    public ParticleSystem fireParticles;
     private Animator animator;
-    private InputController input;
+    private PlayerController input;
     private int isRuningHash;
     private int isShootingHash;
     void Start()
     {
         animator = this.GetComponent<Animator>();
-        input = InputController.Instance;
+        input = PlayerController.Instance;
         isRuningHash = Animator.StringToHash("IsRuning");
         isShootingHash = Animator.StringToHash("IsShooting");
     }
@@ -33,10 +34,14 @@ public class AnimationManController : MonoBehaviour
 
         if (!isShooting && input.IsShooting)
         {
+            if (fireParticles != null && !fireParticles.isPlaying)
+                fireParticles.Play();
             animator.SetBool(isShootingHash, true);
         }
         else if (isShooting && !input.IsShooting)
         {
+            if (fireParticles != null && fireParticles.isPlaying)
+                fireParticles.Stop();
             animator.SetBool(isShootingHash, false);
         }
     }

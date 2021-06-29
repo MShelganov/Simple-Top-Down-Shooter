@@ -1,20 +1,14 @@
 fileFormatVersion: 2
-guid: 1d6e421032be6eb4abf992ce5d4d7cd9
+guid: 9de4e9178ef44bc4cad1f5b899e6e610
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -887982601649841707
-    second: Idle
+      74: -2463781497245029270
+    second: run
   - first:
-      74: -6712725380312225458
-    second: Tpose
-  - first:
-      74: -3704289112126983070
-    second: Shoot
-  - first:
-      74: 5522812681064789136
-    second: Run
+      74: 7129037438072151518
+    second: hits
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -44,10 +38,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
-      takeName: metarig|metarigAction
+      name: run
+      takeName: metarig|metarigAction.001
       internalID: 0
-      firstFrame: 3
+      firstFrame: 1
       lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
@@ -55,7 +49,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -73,47 +67,18 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Shoot
-      takeName: metarig|metarigAction
+      name: hits
+      takeName: metarig|metarigAction.001
       internalID: 0
       firstFrame: 31
-      lastFrame: 35
+      lastFrame: 43
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Run
-      takeName: metarig|metarigAction
-      internalID: 0
-      firstFrame: 36
-      lastFrame: 72
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
